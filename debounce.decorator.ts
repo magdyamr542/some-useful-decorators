@@ -1,4 +1,4 @@
-function debounceDecorator(debounceTimeMs: number) {
+function debounce(debounceTimeMs: number) {
   let timeoutRef: number | null = null;
   return (_: any, __: any, propDisc: TypedPropertyDescriptor<any>) => {
     const originalMethod = propDisc.value;
